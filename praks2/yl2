@@ -1,0 +1,7 @@
+#!/bin/bash
+#Kasutajanimi suure tähega
+esitaht=$(whoami | cut -c1 | tr [a-z] [A-Z])
+teisedtahed=$(whoami | cut -c2-)
+
+#echo "Tere, $esitaht$teisedtahed!"
+echo -e "Tere, $esitaht$teisedtahed \n!"
