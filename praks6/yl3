@@ -1,0 +1,23 @@
+#!/bin/bash
+
+#Sisestatakse kuu number (1-12). Väljundiks kuu numbrile vastav kuu nimetus.
+
+echo -ne "Sisestage kuu number (1-12): "
+read kuu
+
+case $kuu in ##Hea alternatiiv if-elif-else konstruktsioonile. 
+	"1") echo "Sisestatud kuu number vastab jaanuarile.";;
+	"2") echo "Sisestatud kuu number vastab veebruarile.";;
+	"3") echo "Sisestatud kuu number vastab märtsile.";;
+	"4") echo "Sisestatud kuu number vastab aprillile.";;
+	"5") echo "Sisestatud kuu number vastab maile.";;
+	"6") echo "Sisestatud kuu number vastab juunile.";;
+	"7") echo "Sisestatud kuu number vastab juulile.";;
+	"8") echo "Sisestatud kuu number vastab augustile.";;
+	"9") echo "Sisestatud kuu number vastab septembrile.";;
+	"10") echo "Sisestatud kuu number vastab oktoobrile.";;
+	"11") echo "Sisestatud kuu number vastab novembrile.";;
+	"12") echo "Sisestatud kuu number vastab detsembrile.";;
+	*) echo "Sisestatud kuu number on vigane.";;
+esac
+
