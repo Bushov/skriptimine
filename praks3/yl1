@@ -1,0 +1,10 @@
+#!/bin/bash
+
+###Küsib ees- ja perekonnanime
+
+
+echo -n "Sisesta oma ees- ja perenimi: "
+echo -ne "Sisesta oma ees- ja perenimi: "
+
+read eesnimi perenimi
+echo "Tere tulemast, $eesnimi $perenimi"
