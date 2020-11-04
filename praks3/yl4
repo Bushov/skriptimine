@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#Bussiekskursiooni abistaja
+
+echo "Mitu kohta on bussis? "
+read koht
+echo "Mitu reisjat on grupis? "
+read arv
+
+var1=$koht
+var2=$arv
+var3=$((arv-koht))
+
+if [ $koht -ge $arv ]
+	then
+		echo "Kõik $arv reisijat mahub bussi"
+	else
+		echo "Bussist jääb maha $var3 reisija/reisijat"
+	fi
