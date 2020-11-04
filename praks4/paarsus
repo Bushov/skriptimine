@@ -1,0 +1,29 @@
+#!/bin/bash
+
+#Paaris või paaritu arv, aga arv tuleb sisestada skripti käivitumisel
+
+arv="$1"
+
+jaak=$((arv%2))
+
+if [ -z $arv ] ;
+
+then
+
+		echo "Käivita see skript koos arvuga mille paarsust soovid kontrollida. Näiteks: ./paarsus 3"
+
+else
+
+	if [ $jaak -eq 0 ] ;
+
+then
+
+		echo "$arv on paaris"
+
+else
+
+		echo "$arv on paaritu"
+
+	fi
+
+fi
