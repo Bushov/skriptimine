@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#Sisestatakse suvaline täisarv. Arvutatakse sisestatud arvu numbrite summa
+
+echo "Sisestage üks suvaline täisarv"
+read arv
+
+summa=0
+
+while [ $arv -ne 0 ]
+
+do
+
+	jaak=$(($arv % 10)) #See annab 123 % 10 = 3
+	summa=$(($summa + $jaak))
+	arv=$(($arv / 10))
+
+done
+
+echo "Sisestatud arvude summa on $summa"
