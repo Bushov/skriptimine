@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#Tervitab kasutajat
+
+
+echo -ne  "Tere, "; whoami && echo "!"
