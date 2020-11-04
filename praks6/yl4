@@ -1,9 +1,10 @@
 #!/bin/bash
 
-#Kas arv on algarv või mitte
+#Kas arv on algarv või mitte. Täiendus: Kas esimesed 20 arvu on algarvud või mitte?
 
-echo -ne  "Sisesta suvaline algarv: "
-read arv
+for (( arv=1; arv<21; arv++ ))
+
+do
 
 summa=0
 
@@ -35,3 +36,5 @@ else
 	fi
 
 fi
+
+done
