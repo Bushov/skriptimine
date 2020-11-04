@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#Väljastab kuupäeva ja ajaga seotud info
+
+
+echo -ne  "Today is $date"; date  +'%d/%m/%Y'
+
+echo -ne "The current time is "; date +'%H:%M:%S'
+
+cal
