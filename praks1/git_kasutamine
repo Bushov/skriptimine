@@ -17,6 +17,13 @@ tekita lokaalne repo git süsteemi antud kaustas
 
 git init
 
+remote seadistamine
+
+git remote add nimi aadress
+git remote add skriptimine www.github.com/bushov/skriptimine.git
+git remote kontroll
+git remote -v
+
 #
 
 Faili iga muudatuse korral:
