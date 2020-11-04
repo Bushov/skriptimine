@@ -1,0 +1,19 @@
+#!/bin/bash
+#ainepunktide aja arvestamine
+
+echo -ne "Sisestage EAPde arv: "
+
+read eap
+
+echo -ne "Sisestage nädalate arv: "
+
+read weeks
+
+echo "EAP: $eap, Nädalaid: $weeks"
+
+var1=$((eap * 26))
+var2=$((var1 / weeks))
+
+d=$(echo "($var2+0.9)/1" | bc)
+
+echo $d
