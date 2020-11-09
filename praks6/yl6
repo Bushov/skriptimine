@@ -1,0 +1,25 @@
+#!/bin/bash
+
+## Küsib ridu ja tärnide arvu reas. 
+
+echo "Sisestage ridade arv: "
+read rida
+echo "Sisestage tärnide arv reas: "
+read symbol
+
+echo "Ridade arv: $rida ja tärnide arv: $symbol"
+
+for (( i = 1 ; i <= $rida; i++ ))   ###Outer for loop###
+
+do
+
+	for (( j = 1 ; j <= $symbol; j++)) ###Inner for loop###
+
+	do
+		echo -n ""*" "
+
+done
+
+	echo "" #print a new line#
+
+done
