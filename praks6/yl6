@@ -9,17 +9,20 @@ read symbol
 
 echo "Ridade arv: $rida ja tärnide arv: $symbol"
 
-for (( i = 1 ; i <= $rida; i++ ))   ###Outer for loop###
+for (( i = 1; i <= $rida; i++ ))      ### Outer for loop ###
 
 do
 
-	for (( j = 1 ; j <= $symbol; j++)) ###Inner for loop###
+        echo -n "$i. "
 
-	do
-		echo -n ""*" "
+    for (( j = 1; j <= $symbol; j++ )) ### Inner for loop ###
 
-done
+    do
 
-	echo "" #print a new line#
+          echo -n "* "
+
+    done
+
+  echo "" #### print the new line ###
 
 done
