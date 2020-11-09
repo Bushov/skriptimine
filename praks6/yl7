@@ -1,0 +1,27 @@
+#!/bin/bash
+
+#Ridade arv, tärnide arv seotud ridadega
+
+echo "Sisestage ridade arv: "
+read rida
+
+echo "Valitud on $rida rida "
+
+
+for (( i = 1; i <= $rida; i++ ))      ### Outer for loop ###
+
+do
+
+       echo -n "$i. "
+
+  		 for (( j = 1; j <= i; j++ )) ### Inner for loop ###
+
+		 do
+
+			  echo -n "* "
+
+    done
+
+  echo "" #### print the new line ###
+
+done
