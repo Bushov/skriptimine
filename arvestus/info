@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#Ludvig-Erik Lidmets, skript info
+#Śkript tervitab sisselogitud kasutajat ning väljastab tänase kuupäeva ning kellaja
+
+paev=`date "+%d.%m.%Y"` # defineerin kuupäeva, et seda saaks lihtsalt panna ühte echosse koos ajaga
+kell=`date +'%H:%M'` #defineerin kellaaja, et saaks seda lihtsalt panna ühte echosse koos kuupäevaga
+
+
+echo "Tere tulemast `whoami` !" #Tervitab sisselogitud kasutajat
+
+echo  "Täna on $paev kell $kell" #Väljastab tänase kuupäeva ja kellaaja
+
+
