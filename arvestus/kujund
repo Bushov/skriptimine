@@ -3,7 +3,7 @@
 #Ludvig-Erik Lidmets, skript kujund
 #Sisestatakse kujundi ridade arv ja trükib kujundi mis koosneb vastavast ridade arvust
 
-echo "Sisestage ridade arv: "
+echo -ne "Sisestage ridade arv: "
 read rida
 
 for (( i = 1; i <= $rida; i++ ))      ### Välimine for loop - mitu rida peab printima
