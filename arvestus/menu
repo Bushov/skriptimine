@@ -1,0 +1,36 @@
+#!/bin/bash
+
+#Ludvig-Erik Lidmets, skript menu
+#Väljastab kasutajale menüü, küsib valikut ning  väljastab söögi kirjelduse
+
+osch=0
+
+echo "1) Liha ja kartulid"
+echo "2) Kala ja krõpsud"
+echo "3) supp ja salat"
+
+echo -ne "Tee oma valik (1-3): "
+read osch
+
+if [ $osch -eq 1 ] ;
+	then
+		echo "Väga maitsev, aga jälgi oma tervist!"
+		echo "Head isu!"
+
+else
+
+	if [ $osch -eq 2 ] ;
+
+		then
+
+			echo "Brititoit on maitsev!"
+			echo "Head isu!"
+
+else
+
+	echo "Nii tervislik ja igav..."
+	echo "Head isu!"
+
+	fi
+
+fi
