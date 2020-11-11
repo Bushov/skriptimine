@@ -21,4 +21,5 @@ do
 
   echo "" #### Prindib tühja rea
 
-done | tac
+done | tac #tac on vastand cat commandile, mis prindib kõik järjest. 
+           #Tac command prindib suurema arvu tärne ennem, mis siis hakkab kahanema
